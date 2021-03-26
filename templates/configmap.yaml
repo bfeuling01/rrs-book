@@ -1,8 +1,10 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: myconfigmap
+  name: configmap
   labels:
-    app: myapplication
+    app: nginx
 data:
-  my-key: my-value
+  envvar1: "variable-1"        
+  envvar2: "variable-2"
+  envvar3: "variable-3"
